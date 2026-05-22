@@ -2,6 +2,7 @@ mod ownership;
 mod enums;
 mod structs;
 mod method;
+mod arr;
 
 fn main() {
     let x = 5;
@@ -39,12 +40,22 @@ fn main() {
     //     ..user
     // };
 
+    // Method
     // println!("user: {:#?}\n", user2);
-    println!("The value of x is: {}", x);
-    println!("The value of y is: {}", y);
+    // println!("The value of x is: {}", x);
+    // println!("The value of y is: {}", y);
 
-    let animal = method::Animal::new(String::from("Buddy"), String::from("Dog"), 3);
-    let sound = animal.make_sound();
-    println!("{} the {} says: {}", animal.name, animal.species, sound);
+    // let animal = method::Animal::new(String::from("Buddy"), String::from("Dog"), 3);
+    // let sound = animal.make_sound();
+    // println!("{} the {} says: {}", animal.name, animal.species, sound);
+
+    // let dana = method::Dana {account_number: String::from("1234567890")};
+    // let result = method::PaymentMethod::pay(&dana, 240000.12);
+
+
+    // println!("{}", result);
+
+    // Arr
+    arr::arr();
 }
 

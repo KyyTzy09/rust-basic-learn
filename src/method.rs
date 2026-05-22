@@ -18,4 +18,19 @@ impl Animal {
             _ => "Unknown sound".to_string(),
         }
     }
+
+}
+
+pub trait PaymentMethod {
+    fn pay(&self, amount: f64) -> String;
+}
+
+pub struct Dana {
+    pub account_number: String,
+}
+
+impl PaymentMethod for Dana {
+    fn pay(&self, amount: f64) -> String {
+        format!("Paid {} using Dana account {}", amount, self.account_number)
+    }
 }
