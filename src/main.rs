@@ -6,6 +6,7 @@ mod arr;
 mod tuple;
 mod hash_map;
 mod vec;
+mod conditional;
 
 
 fn main() {
@@ -70,5 +71,9 @@ fn main() {
 
     // Vec
     vec::vec_example();
+
+    // Conditional
+    conditional::if_conditional();
+    conditional::match_conditional();
 }
 
