@@ -1,24 +1,18 @@
 
 #[derive(Debug)]
-struct Presiden {
-    JOKOWI: String,
-    SBY: String,
-    SOEHARTO: String,
+enum Presiden {
+    JOKOWI,
+    SBY,
+    SOEHARTO,
 }
 
 pub  fn arr() {
-    let presiden = Presiden {
-        JOKOWI: String::from("Joko Widodo"),
-        SBY: String::from("Susilo Bambang Yudhoyono"),
-        SOEHARTO: String::from("Soeharto"),
-    };
-
-    let mut arr : [String; 3] = [presiden.JOKOWI, presiden.SBY, presiden.SOEHARTO];
+    let arr : [Presiden; 3] = [Presiden::JOKOWI, Presiden::SBY, Presiden::SOEHARTO];
     for  nama in arr.iter() {
-        match nama.as_str() {
-            "Joko Widodo" => println!("Presiden ke-7 Indonesia"),
-            "Susilo Bambang Yudhoyono" => println!("Presiden ke-6 Indonesia"),
-            "Soeharto" => println!("Presiden ke-2 Indonesia"),
+        match nama {
+            Presiden::JOKOWI => println!("{:#?} Presiden ke-7 Indonesia", nama),
+            Presiden::SBY => println!("{:#?} Presiden ke-6 Indonesia", nama),
+            Presiden::SOEHARTO => println!("{:#?} Presiden ke-2 Indonesia", nama),
             _ => println!("Tidak diketahui"),
         }
     }

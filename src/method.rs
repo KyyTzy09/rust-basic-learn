@@ -1,4 +1,3 @@
-
 pub struct Animal {
     pub name: String,
     pub species: String,

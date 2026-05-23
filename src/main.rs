@@ -3,6 +3,9 @@ mod enums;
 mod structs;
 mod method;
 mod arr;
+mod tuple;
+mod hash_map;
+
 
 fn main() {
     let x = 5;
@@ -57,5 +60,11 @@ fn main() {
 
     // Arr
     arr::arr();
+
+    // Tuple
+    tuple::tuple();
+
+    // Hash Map
+    hash_map::hash_map();
 }
 
