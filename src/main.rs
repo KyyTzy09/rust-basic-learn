@@ -5,6 +5,7 @@ mod method;
 mod arr;
 mod tuple;
 mod hash_map;
+mod vec;
 
 
 fn main() {
@@ -66,5 +67,8 @@ fn main() {
 
     // Hash Map
     hash_map::hash_map();
+
+    // Vec
+    vec::vec_example();
 }
 
